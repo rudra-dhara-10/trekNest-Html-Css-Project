@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body { 
   overflow-x: hidden;
   /* font-family: 'Poppins', sans-serif; */
   font-family: "Roboto", sans-serif;
@@ -221,8 +221,6 @@ body {
   border-radius: 10px;
   border: none;
 }
-
-/* Whether you're exploring historic cities or scenic landscapes, our guides ensure a safe, immersive, and unforgettable journey. */
 
 /* why us section  */
 
@@ -665,4 +663,591 @@ footer {
   margin-top: 40px;
 }
 
+/* =====================================================
+   RESPONSIVE – paste at the END of index.css
+   ===================================================== */
 
+/* ---------- Laptop / small desktop (≤ 1024px) ---------- */
+@media (max-width: 1024px) {
+  .top {
+    height: auto;
+    min-height: 100vh;
+    padding-bottom: 60px;
+  }
+  .header {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .logo {
+    margin-left: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .icon {
+    margin-right: 25px;
+  }
+  .text h1 {
+    font-size: 44px;
+  }
+
+  /* guide section */
+  .guide {
+    height: auto;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .text1,
+  .image_text {
+    width: 100%;
+  }
+  .text1 h1,
+  .image_text h1 {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .div-left {
+    height: auto;
+  }
+  .hello {
+    margin-left: 0;
+  }
+  .div-right {
+    height: auto;
+    margin-left: 45px;
+    padding-bottom: 30px;
+  }
+  .right img {
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+  }
+
+  /* why us */
+  .Why-us-section {
+    padding: 40px 30px;
+  }
+  .features {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .feature {
+    width: calc(50% - 15px);
+  }
+
+  /* activities */
+  .section-activities {
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .boat {
+    justify-content: center;
+  }
+  .boat img {
+    width: 90%;
+    height: 50vh;
+    margin-left: 0;
+  }
+  .activities-text {
+    margin: 20px 0 0 45px;
+  }
+  .activities {
+    margin-left: 0;
+    width: 90%;
+    height: auto;
+  }
+
+  /* tours */
+  .popular-tours {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .boxes {
+    flex-wrap: wrap;
+    margin: 22px 35px 0;
+  }
+  .img-box {
+    width: calc(50% - 15px);
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .img-box img {
+    height: 260px;
+  }
+
+  /* booking steps */
+  .advantures-booking {
+    height: auto;
+  }
+  .Booking-method {
+    height: auto;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 0 30px;
+  }
+  .method {
+    width: 50%;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  /* destinations */
+  .popular-destination-images {
+    padding: 2rem 1rem;
+    justify-content: center;
+  }
+}
+
+/* ---------- Tablet (≤ 768px) ---------- */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    margin: 20px 15px 0;
+    justify-content: center;
+    gap: 10px;
+  }
+  .logo h1 {
+    font-size: 30px;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav ul {
+    margin: 10px 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+  }
+  .nav ul li {
+    font-size: 16px;
+  }
+  .icon {
+    margin: 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text {
+    margin-top: 50px;
+    padding: 0 20px;
+  }
+  .text h1 {
+    font-size: 36px;
+  }
+  .text h2 {
+    font-size: 17px;
+  }
+
+  /* guide */
+  .text1 h1,
+  .image_text h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .div-left {
+    margin: 0 20px;
+  }
+  .hello {
+    gap: 15px;
+  }
+  .box {
+    width: 100%;
+    height: 150px;
+  }
+  .div-right {
+    margin: 0 20px;
+  }
+  .box-rightside {
+    flex-direction: column;
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  .right1 {
+    margin: 0 20px;
+    gap: 15px;
+  }
+  .right-btn {
+    margin-top: 10px;
+  }
+  .right {
+    margin: 0 20px;
+    justify-content: center;
+  }
+  .right img {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  /* why us */
+  .Why-us-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .why-us {
+    writing-mode: horizontal-tb;
+    transform: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
+  /* activities */
+  .activities-text {
+    margin: 10px 20px 0;
+  }
+  .activities-text h1 {
+    font-size: 30px;
+  }
+  .activities {
+    flex-wrap: wrap;
+    gap: 20px 40px;
+    margin-bottom: 15px;
+  }
+  .activities-text .right-btn {
+    margin-left: 0 !important;
+    margin-top: 25px;
+  }
+
+  /* video */
+  .video {
+    height: 50vh;
+    margin: 60px 0;
+  }
+  .video video {
+    height: 100%;
+  }
+  .text-video h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  /* tours */
+  .tag {
+    margin: 0 20px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .tag h1 {
+    font-size: 28px;
+  }
+  .boxes {
+    margin: 22px 20px 0;
+  }
+
+  /* booking */
+  .Booking-heading {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .Booking-method {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* heading */
+  .heading-destination {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .top-header {
+    margin: 0 20px;
+  }
+  .top-header h1 {
+    font-size: 28px;
+  }
+
+  /* destinations */
+  .popular-destination {
+    padding: 3rem 1rem;
+  }
+  .popular-destination-caption h1 {
+    font-size: 2rem;
+  }
+  /* no hover on touch screens: keep the caption visible */
+  .popular-destination-image-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* footer */
+  footer {
+    padding: 40px 20px 20px;
+  }
+  .footer-container {
+    gap: 30px;
+  }
+  .footer-col {
+    flex: 1 1 45%;
+  }
+}
+
+/* ---------- Mobile (≤ 480px) ---------- */
+@media (max-width: 480px) {
+  .logo img {
+    height: 35px;
+    width: 38px;
+  }
+  .logo h1 {
+    font-size: 26px;
+  }
+  .nav ul {
+    gap: 10px 15px;
+  }
+  .nav ul li {
+    font-size: 15px;
+  }
+  .icon button {
+    width: 140px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  .text h1 {
+    font-size: 28px;
+  }
+  .text h2 {
+    font-size: 15px;
+  }
+  .text button {
+    width: 180px;
+    font-size: 16px;
+  }
+
+  /* guide: stats in a 2-column grid that fits small screens */
+  .hello {
+    gap: 12px;
+  }
+  .box {
+    height: 120px;
+    font-size: 16px;
+  }
+  .text1 h1,
+  .image_text h1 {
+    font-size: 18px;
+  }
+
+  /* why us */
+  .feature {
+    width: 100%;
+  }
+
+  /* activities */
+  .boat img {
+    width: 92%;
+    height: 32vh;
+    border-radius: 15px;
+  }
+  .activities-text h1 {
+    font-size: 24px;
+  }
+  .activities {
+    width: 100%;
+    gap: 15px 30px;
+  }
+
+  /* video */
+  .video {
+    height: 35vh;
+    margin: 40px 0;
+  }
+  .text-video h1 {
+    font-size: 22px;
+  }
+
+  /* tours: one card per row */
+  .img-box {
+    width: 100%;
+  }
+  .img-box img {
+    height: 220px;
+  }
+  .gallary-text h1 {
+    font-size: 18px;
+  }
+  .gallary-text h2 {
+    font-size: 15px;
+  }
+
+  /* booking */
+  .method {
+    width: 100%;
+  }
+  .Booking-heading h1 {
+    font-size: 26px;
+  }
+
+  /* destinations */
+  .popular-destination-image {
+    width: 100%;
+    max-width: 320px;
+    height: 360px;
+  }
+  .popular-destination-images {
+    gap: 1.5rem;
+  }
+
+  /* footer: single column */
+  .footer-col {
+    flex: 1 1 100%;
+  }
+  .footer-bottom {
+    font-size: 13px;
+  }
+}
+
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .activities-text {
+    width: auto;
+    margin: 20px 45px 0;
+  }
+  .Booking-method {
+    width: auto;
+  }
+  .boat {
+    width: 100%;
+  }
+  .video video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .activities-text {
+    margin: 10px 20px 0;
+  }
+  .nav ul {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}
+
+
+/* ---------- Mobile header: hamburger menu ---------- */
+.menu-toggle,
+.nav-call {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    gap: 10px;
+  }
+
+  .logo {
+    margin: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .logo img {
+    margin-top: 0;
+  }
+  .logo h1 {
+    font-size: 26px;
+  }
+
+  /* cart + user stay visible, phone button moves into the menu */
+  .icon {
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  .icon i {
+    font-size: 20px !important;
+    margin-left: 14px !important;
+  }
+  .icon button {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #111;
+    cursor: pointer;
+    padding: 6px 4px;
+  }
+
+  /* dropdown panel */
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+    z-index: 50;
+  }
+  .nav.open {
+    max-height: 400px;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .nav ul li {
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  .nav ul li a {
+    display: block;
+    padding: 15px 0;
+  }
+  .nav a::after {
+    display: none;
+  }
+
+  .nav-call {
+    display: block;
+    padding: 15px 0;
+    border-bottom: none !important;
+  }
+  .nav-call button {
+    color: #fff;
+    background: red;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 180px;
+    font-size: 15px;
+  }
+
+  /* hero */
+  .top {
+    background-position: center bottom;
+  }
+  .text {
+    margin-top: 40px;
+  }
+}
